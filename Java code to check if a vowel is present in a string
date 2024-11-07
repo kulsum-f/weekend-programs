@@ -1,0 +1,39 @@
+package WeekendPrograms;
+
+import java.util.Scanner;
+
+public class Vowel {
+
+	public static void main(String[] args) {
+
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+
+        if (containsVowel(input)) {
+            System.out.println("the string contains a vowel.");
+        } else {
+            System.out.println("the string does not contain a vowel.");
+        }
+
+        scanner.close();
+    }
+	
+	public static boolean containsVowel(String str) {
+		
+		str = str.toLowerCase();
+		
+		return str.contains("a") || str.contains("e") || str.contains("i") || str.contains("o") || str.contains("u");
+	}
+
+}
+
+
+OUTPUT:
+Enter a string: kulsum
+the string contains a vowel
+
+
+Enter a string: dry
+the string does not contain a vowel
