@@ -1,0 +1,42 @@
+package WeekendPrograms;
+
+import java.util.Scanner;
+
+class LogicalOperator
+{
+	public void checkDivisibility(int number) {
+        if (number % 5 == 0 && number % 3 == 0) {
+            System.out.println(number + " is divisible by both 5 and 3.");
+        }
+        else 
+        {
+            System.out.println(number + " is not divisible by both 5 and 3.");
+        }
+    }
+}
+
+
+public class LogicalOperators {
+
+	public static void main(String[] args) {
+
+		 Scanner scanner = new Scanner(System.in);
+	        
+	        System.out.print("Enter a number: ");
+	        int number = scanner.nextInt();
+	        
+	        LogicalOperator logicalOperator = new LogicalOperator();
+	        logicalOperator.checkDivisibility(number);
+	        
+	        scanner.close();
+	}
+
+}
+
+OUTPUT:
+Enter a number: 15
+15 is divisible by both 5 and 3.
+
+Enter a number: 10
+10 is not divisible by both 5 and 3.
+
